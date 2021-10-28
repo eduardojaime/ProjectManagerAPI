@@ -1,6 +1,5 @@
 // Router that handles requests to /api/projects
 const express = require('express');
-const { route } = require('..');
 const router = express.Router();
 // Import the model
 const Project = require('../../models/project');
@@ -54,7 +53,6 @@ router.post('/', (req, res, next) => {
         ); // callback function to handle creating a new project
     }
 });
-
 
 // PUT /projects/:_id > Input: JSON object containing information about the project
 router.put('/:_id', (req, res, next) => {
