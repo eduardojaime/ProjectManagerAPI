@@ -37,7 +37,7 @@ mongoose.connect(config.db, { useNewUrlParser: true, useUnifiedTopology: true })
   console.log('Connected successfully!');
 })
 .catch((error) => {
-  console.log(`Error while connecting! ${reason}`);
+  console.log(`Error while connecting! ${error}`);
 })
 
 // error handler
